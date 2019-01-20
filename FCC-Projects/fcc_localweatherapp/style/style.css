@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.broken-clouds {
+  background: linear-gradient(to bottom, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 100%);
+    }
+.rain {
+  background: linear-gradient(to bottom, rgba(89,106,114,1) 16%,rgba(89,106,114,1) 24%,rgba(206,220,231,1) 95%);
+  }
+.snow {
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);
+ }
+.clear-sky {
+  background: linear-gradient(to bottom, rgba(210,235,249,1) 0%,rgba(254,255,255,1) 100%);
+}
+.thunderstorm {
+  background: linear-gradient(to bottom, rgba(89,106,114,1) 16%,rgba(89,106,114,1) 24%,rgba(206,220,231,1) 95%);
+}
+hr {
+  border-color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#content-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  vertical-align: middle;
+  color: white;
+  max-width: 400px;
+  margin: 50px auto;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#weather {
+  padding-top: 10px; 
+}
+#temp {
+  padding: 5px 5px;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  width: 100px;
+  }
+#wicon {
+  display: inline-block;
+    }
+#location {
+  margin-top: 5px;
+  font-size: 20px;
+  }
+  form.hidden {
+    display: none;
+}
