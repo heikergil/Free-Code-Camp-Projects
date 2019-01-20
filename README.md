@@ -1,2 +1,2 @@
 # Free-Code-Camp-Projects
-My free code  project
+My free code camp projects
