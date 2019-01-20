@@ -76,7 +76,7 @@ $( document ).ready(function() {
     apiUrl="https://api.openweathermap.org/data/2.5/forecast?q="+cityname+"&units=metric"+"&appid=38cb4a78b57b4832242b09fc0609a7ce"; 
      /*Making JSON call*/
        $.getJSON(apiUrl, function(json){
-               $("#temp").html((json['list']['0'].main.temp).toFixed(0)+" °C/f");
+          $("#temp").html((json['list']['0'].main.temp).toFixed(0)+" °C/f");
           $("#location").html(json.city.name +', '+json.city.country);
           $("#wicon").html('<img src='+'https:' + '//' + "openweathermap.org/img/w/" + json['list']['0'].weather['0'].icon + '.png' + ' height="100px" width="100px">');
           $('#description').html(json['list']['0'].weather['0'].description);
