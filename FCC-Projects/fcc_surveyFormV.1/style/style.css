@@ -1,0 +1,37 @@
+body {
+    background-color: cadetblue;
+    min-width: 200px
+}
+h1, #description {
+    text-align: center;
+}
+input:invalid {
+  border: 2px dashed red;
+}
+form {
+    display: block;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    max-width: 900px;
+    min-width: 200px;
+    }
+input {
+    
+    margin: 5px;
+    max-width: 300px;
+}
+#name, #number, #email {
+    min-width: 200px;
+    display: block;
+}
+#dropdown-div p { 
+display: inline-block;
+width: 50%;
+vertical-align: middle;
+}
+textarea {
+    margin-top: 20;
+    margin-bottom: 10;
+    width: 100%;
+}

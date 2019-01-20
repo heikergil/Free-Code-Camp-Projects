@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fcc Survey Form V.1</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" href="/fcc_surveyFormV.1/style/style.css">
+</head>
+<body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">I want to know more about you...</p>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+            <div>
+          <label for="name" id="name-label">*Name:
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  </label>
+            </div>
+            <div>
+                <label for="number" id="number-label">*Your age: <input id="number" type="number" name="age" placeholder="Enter your age" pattern="\d+" min="1" max="120" required>
+                </label>
+            </div>
+           
+             <div>
+          <label for="email" id="email-label">*E-mail:
+                  <input type="email" id="email" name="email" placeholder="Enter your E-mail" required>
+                  </label>
+            </div>
+                <div>
+                <legend>Your gender:</legend>
+            <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+                </div>
+            </fieldset>
+            <div id="dropdown-div">
+            <p>Which of these options best describes your current programming situation?</p>
+                <select name="dropdown" id="dropdown">
+                <option value="Self taught">Self taught</option>
+                    <option value="Formal student">Formal student</option>
+                    <option value="Full time job">Full time job</option>
+                    <option value="Freelancer">Freelancer</option>
+                </select>
+                </div>
+               <fieldset> <legend>Check the computer languages you are trying to learn:</legend>
+                   Java<input type="checkbox" name="language1" value="Java">
+                   C<input type="checkbox" name="language2" value="C">
+                   C++<input type="checkbox" name="language3" value="C++">
+                   Python<input type="checkbox" name="language4" value="Python">
+                   C#<input type="checkbox" name="language5" value="C#">
+                   PHP<input type="checkbox" name="language6" value="PHP">
+                   JavaScript<input type="checkbox" name="language7" value="JavaScript">
+                   SQL<input type="checkbox" name="language8" value="SQL">
+                   HTML<input type="checkbox" name="language9" value="HTML">
+                   CSS<input type="checkbox" name="language10" value="CSS">
+                   Other<input type="checkbox" name="language11" value="other">
+            
+        </fieldset>
+            <textarea name="message" rows="10" cols="30">
+    Additional comments
+    </textarea>
+            <div>
+            <button type="submit" id="submit">Submit!</button>
+            </div>
+                </form>
+         
+    </body>
+</html>
