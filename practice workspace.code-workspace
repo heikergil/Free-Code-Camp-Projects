@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "css-navbar"
+		},
+		{
+			"path": "FCC-Projects"
+		},
+		{
+			"path": "static_calendar"
+		},
+		{
+			"path": "practice&tutorials"
+		},
+		{
+			"path": "static_calendarV2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "static_calendar"
+	}
+}
