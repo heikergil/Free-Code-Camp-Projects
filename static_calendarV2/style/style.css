@@ -1,23 +1,104 @@
-
-
 body {
     border: red 16px solid;
-    background: lightblue url("/images/background2.png");
+    background: lightblue url("/images/background.png");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     box-sizing: border-box;
+    min-width: 420px;
     width: 100%;
     height: 100%;
     margin: 0; /* Space from this element (entire page) and others*/
     padding: 0; /*space from content and border*/  
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+
 }
 
-.picture {
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+    width: 100%;
+    }
+@media screen and (min-width: 800px){
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+#brand {
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+    margin-left: .5em;
+   
+}
+#year {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+#year > div {
+    margin: 0;
+}
+
+#year > div > p {
+    font-size: 4em;
+    font-weight: 800;
+    margin: 0;
+    
+}
+.two > p {
+    color: red;
+    transform: rotate(-20deg);
+}
+.one > p {
+    transform: rotate(10deg);
+}
+.nine > p {
+    transform: rotate(9deg);
+}
+
+#logo {
+    background: blue;
+    width: 60px;
+    height: 66px;
+    display: inline-block;
+}
+#name {
+    color: darkred;
+    font-size: 2.3em;
+    font-weight: 600;
+    margin-left: 5px;
+    display: inline;
+}
+#bot {
+    margin: 0px;
+}
+#bar {
+    background: blue;
+    width: 280px;
+    height: 8px;
+    display: inline-block;
+    
+}
+#sas {
+    display: inline;
+}
+
+img {
+    width: 100%;
+    height: 100%;
     border: red 3px solid;
     margin-bottom: 5px;
     margin-top: 5px;
-       
 }
 
 #column2 {
@@ -25,7 +106,7 @@ body {
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     .body_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -39,10 +120,7 @@ body {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
-    .column {
-        border: black 1px solid;
-    }
-   
+       
     #column2 {
         display:inline;
     }
@@ -52,7 +130,7 @@ body {
     display: grid;
     grid-template-columns:1fr 7fr;
     padding: 5px 10px 5px 15px;
-    border: black 1px solid;
+    
     width: 320px;
 }
 p {
