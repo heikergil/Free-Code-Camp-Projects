@@ -1,0 +1,10 @@
+.square1 {
+    display:flex;
+    margin: 100px auto;
+    height: 80px;
+    width: 80px;
+    border: 4px blue solid;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
