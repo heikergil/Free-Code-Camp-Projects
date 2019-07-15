@@ -3,7 +3,7 @@ import './App.css';
 import * as marked from 'marked';
 
 const renderer = new marked.Renderer();
-// ALLOWS LINE BREAKS WITH RETURN BUTTON
+
 marked.setOptions({
   breaks: true,
 });
