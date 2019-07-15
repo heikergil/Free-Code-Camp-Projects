@@ -19,7 +19,7 @@ function Square(props) {
         />
       );
     }
-  
+  // render is a life cycle method
     render() {
       return (
         <div>
@@ -46,6 +46,8 @@ function Square(props) {
   class Game extends React.Component {
     constructor(props) {
       super(props);
+      // state is an object that determines how the component
+      // renders and behave
       this.state = {
         history: [{
           squares: Array(9).fill(null)
@@ -53,6 +55,8 @@ function Square(props) {
         stepNumber: 0,
         xIsNext: true
       };
+      // "application level state" is data that we want 
+      // to share between multiple components like "redux"
     }
   
     handleClick(i) {
