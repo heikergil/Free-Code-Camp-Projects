@@ -1,30 +1,35 @@
 #editor {
-    margin: 5px auto;
-    border: solid black 1px;
-    height: 250px;
-    width: 50%;
+    margin: 0px auto;
+    width: 600px;
+    padding: 0px;
+    }
+.header {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    height: 25px;
+    width: 100%;
     background-color: gray;
+    
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: -5px;
+    resize: vertical;
+    outline: none;
+    font-size: 12px;
 }
 
 #preview {
     margin: 5px auto;
+    padding: 0px 3px 3px 3px;
     border: solid black 1px;
     height: 250px;
     width: 70%;
     background-color: gray;
 }
-
-.header {
-    height: 25px;
-    border-bottom: solid black 1px;
-}
-
-.textarea {
-    width: 100%;
-    height: 100%;
-}
-.boxsizingBorder {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
+ 
