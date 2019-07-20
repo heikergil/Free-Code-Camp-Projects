@@ -1,4 +1,4 @@
-#editor {
+#editor-wrap {
     margin: 0px auto;
     width: 600px;
     padding: 0px;
@@ -24,7 +24,7 @@ textarea {
     font-size: 12px;
 }
 
-#preview {
+#preview-wrap {
     margin: 5px auto;
     padding: 0px 3px 3px 3px;
     border: solid black 1px;
