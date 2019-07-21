@@ -7,10 +7,12 @@
     box-sizing: border-box;
     position: relative;
     margin: 0px 0px;
-    padding: 0px 0px;
+    padding: 3px 10px;
     height: 25px;
     width: 100%;
     background-color: gray;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
 
@@ -22,14 +24,27 @@ textarea {
     resize: vertical;
     outline: none;
     font-size: 12px;
+    padding: 5px;
+    background-color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #preview-wrap {
     margin: 5px auto;
-    padding: 0px 3px 3px 3px;
-    border: solid black 1px;
-    height: 250px;
+    padding: 3px 0px 0px 0px;
+    min-height: 250px;
     width: 70%;
     background-color: gray;
+    overflow: auto;
+
 }
- 
+
+#preview {
+    padding: 5px;
+    background-color: antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+code {
+    background-color: white;
+}

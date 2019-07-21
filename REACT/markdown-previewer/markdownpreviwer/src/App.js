@@ -15,7 +15,7 @@ class App extends Component {
     super(props)
     // state is any data your application needs to know about.
     this.state = {
-            input: placeholder
+            input: placeholder,
     }
     // methods bindings
     this.onInputChange = this.onInputChange.bind(this);
@@ -24,20 +24,23 @@ class App extends Component {
   onInputChange = e => {
     this.setState({ input: e.target.value})
   }
+  // this adds freecodecamp tests script
   componentDidMount () {
+
     const script = document.createElement("script");
 
     script.src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js";
     script.async = true;
 
     document.body.appendChild(script);
+    
 }
     
   render() {
           
     return (
       <div>
-      <Editor  value={this.state.input} onChange={this.onInputChange}
+      <Editor  markdown={this.state.input} onChange={this.onInputChange}
       />
       <Previewer markdown={this.state.input} />
       </div>
@@ -50,8 +53,8 @@ class App extends Component {
   const Editor = (props) => {
     return (
       <div id="editor-wrap">
-        <div className="header"></div>
-      <textarea id="editor"
+        <div className="header">Editor</div>
+      <textarea id="editor" value={props.markdown}
       // since 'textarea' cannot comunicate directly with 'app' element, 'onchange' is going to send a signal
       // to the onchange props passed to the Editor element on render everytime it changes. 
         onChange={props.onChange}
@@ -62,14 +65,14 @@ class App extends Component {
   const Previewer = (props) => {
     return (
         <div  id='preview-wrap'>
-          <div className="header"></div>
+          <div className="header">Previewer</div>
           <div id='preview' dangerouslySetInnerHTML={{__html: marked(props.markdown, { renderer: renderer })}}></div>
         </div>
       )
   }
 
   const placeholder = 
-`# Welcome to my React Markdown Previewer!
+`# React Markdown Previewer!
 
 ## This is a sub-heading...
 ### And here's some other cool stuff:
